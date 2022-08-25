@@ -1,10 +1,23 @@
+# server binary
+
 [[bin]]
-name = "grpcextonic"
-path = "src/main.rs"
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[build-dependencies]
+tonic-build = "0.8.0"
+prost-build = { version =  "0.11.1" }
 
 [dependencies]
 serde = "~1.0.126"
 serde_derive = "~1.0.126"
+tonic = "0.8.0"
+tokio = { version = "1.20.1", features = ["full"] }
+prost = "0.11.0"
 
 [lib]
 name = "grpcextonic"
@@ -14,7 +27,6 @@ name = "grpc-ex-tonic"
 description = "gRPC demo in rust with tonic"
 version = "0.1.0"
 edition = "2021"
-default-run = "grpcextonic"
 authors = ["lamhai1401 <lamthanhhai141@gmail.com>"]
 homepage = "https://github.com/lamhai1401/grpc-ex-tonic"
 repository = "https://github.com/lamhai1401/grpc-ex-tonic"
