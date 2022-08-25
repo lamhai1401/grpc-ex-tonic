@@ -3,6 +3,8 @@ name = "grpcextonic"
 path = "src/main.rs"
 
 [dependencies]
+serde = "~1.0.126"
+serde_derive = "~1.0.126"
 
 [lib]
 name = "grpcextonic"
