@@ -1,0 +1,18 @@
+[[bin]]
+name = "grpcextonic"
+path = "src/main.rs"
+
+[dependencies]
+
+[lib]
+name = "grpcextonic"
+
+[package]
+name = "grpc-ex-tonic"
+description = "gRPC demo in rust with tonic"
+version = "0.1.0"
+edition = "2021"
+default-run = "grpcextonic"
+authors = ["lamhai1401 <lamthanhhai141@gmail.com>"]
+homepage = "https://github.com/lamhai1401/grpc-ex-tonic"
+repository = "https://github.com/lamhai1401/grpc-ex-tonic"
